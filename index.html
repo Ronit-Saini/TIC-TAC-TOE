@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <div class="mode-selection">
+      <button onclick="startGame('single')">Single Player</button>
+      <button onclick="startGame('multi')">Multiplayer</button>
+    </div>
+    <div id="board" style="display:none;">
+      <table>
+        <tr>
+          <td id="cell-0" onclick="makeMove(0)"></td>
+          <td id="cell-1" onclick="makeMove(1)"></td>
+          <td id="cell-2" onclick="makeMove(2)"></td>
+        </tr>
+        <tr>
+          <td id="cell-3" onclick="makeMove(3)"></td>
+          <td id="cell-4" onclick="makeMove(4)"></td>
+          <td id="cell-5" onclick="makeMove(5)"></td>
+        </tr>
+        <tr>
+          <td id="cell-6" onclick="makeMove(6)"></td>
+          <td id="cell-7" onclick="makeMove(7)"></td>
+          <td id="cell-8" onclick="makeMove(8)"></td>
+        </tr>
+      </table>
+    </div>
+    <button class="reset-button" onclick="resetGame()">Reset</button>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
